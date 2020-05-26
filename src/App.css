@@ -7,9 +7,18 @@
   background: lightblue;
   padding: 20px;
   min-height: 70vh;
+  margin-right: 100px;
 }
 
 .recipe-list h1:hover{
   color:gray;
   cursor: pointer;
+}
+
+.recipe-list h2{
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+.selected{
+  color: orange;
 }
