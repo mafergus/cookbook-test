@@ -1,8 +1,10 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 import './RecipeDetails.css';
 
 const RecipeDetails = ({name, author, description, imageUrl, ingredients }) => {
+    
     return(
         <div className="recipe-data">
             <div className="recipe-image">
@@ -16,9 +18,9 @@ const RecipeDetails = ({name, author, description, imageUrl, ingredients }) => {
                   <h3>Ingredients</h3>
                   <ul>
                       {
-                          ingredients.map(ingredient => {
+                          ingredients.map((ingredient, id) => {
                               return(
-                                  <li>ingredient</li>
+                                  <li key={id}>{ingredient}</li>
                               )
                           })
                       }
@@ -29,5 +31,14 @@ const RecipeDetails = ({name, author, description, imageUrl, ingredients }) => {
         </div>
     )
 }
+
+RecipeDetails.propTypes = {
+       firstname: PropTypes.string.isRequired,
+       name:PropTypes.string.isRequired,
+       author:PropTypes.string.isRequired,
+       description:PropTypes.string.isRequired,
+       imageUrl:PropTypes.string.isRequired,
+       ingredients:PropTypes.string.isRequired
+   }
 
 export default RecipeDetails;
