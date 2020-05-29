@@ -1,15 +1,44 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 import './RecipeDetails.css';
 
-const RecipeDetails = ({name, author, description }) => {
+const RecipeDetails = ({name, author, description, imageUrl, ingredients }) => {
+    
     return(
-        <div className="recipe-details-info">
-           <div className="name"> {name} </div>
-           <span>By {author}</span>
-           <p>{description}</p>
+        <div className="recipe-data">
+            <div className="recipe-image">
+             <div className="name"> {name} </div>
+              <img src={imageUrl} width="300px" />
+              <span>By {author}</span>
+            </div>
+            <div className="recipe-info">
+              <p>{description}</p>
+              <div className="ingredients">
+                  <h3>Ingredients</h3>
+                  <ul>
+                      {
+                          ingredients.map((ingredient, id) => {
+                              return(
+                                  <li key={id}>{ingredient}</li>
+                              )
+                          })
+                      }
+                  </ul>
+              </div>
+            </div>
+           
         </div>
     )
 }
+
+RecipeDetails.propTypes = {
+       firstname: PropTypes.string.isRequired,
+       name:PropTypes.string.isRequired,
+       author:PropTypes.string.isRequired,
+       description:PropTypes.string.isRequired,
+       imageUrl:PropTypes.string.isRequired,
+       ingredients:PropTypes.string.isRequired
+   }
 
 export default RecipeDetails;
