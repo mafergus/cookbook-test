@@ -3,3 +3,24 @@
     font-style: italic;
     color:orange;
 }
+
+.recipe-image{
+    display:flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.recipe-image img{
+    padding: 20px;
+}
+
+.recipe-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+}
+
+.recipe-info{
+    width: 400px;
+}
