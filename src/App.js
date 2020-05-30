@@ -1,8 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable max-len */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable linebreak-style */
 import React, { useState } from 'react';
 import './App.css';
 import RecipeDetails from './RecipeDetails/RecipeDetails';
