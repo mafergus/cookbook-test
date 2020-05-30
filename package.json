@@ -40,5 +40,10 @@
   "bugs": {
     "url": "https://github.com/ngodi/cookbook-test/issues"
   },
-  "homepage": "https://github.com/ngodi/cookbook-test#readme"
+  "homepage": "https://github.com/ngodi/cookbook-test#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-react": "^7.20.0"
+  }
 }
