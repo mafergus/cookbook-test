@@ -1,22 +1,19 @@
-import React from "react";
-
-import "./App.css";
-
-const recipes = [
-  {
-    author: "Jim",
-    name: "Chicken Curry",
-    description: "Delicious spicy chicken curry",
-  },
-  {
-    author: "Aravind",
-    name: "Hamburger",
-    description: "Juicy burger with toppings and a soft bun",
-  },
-];
+import './App.css'
+import React from 'react';
+import { RecipeProvider } from './Components/RecipeContext';
+import RecipeList from './Components/RecipeList';
+import RecipeDetails from './Components/RecipeDetails';
+import './App.css';
 
 function App() {
-  return <div className="App">Let's add some content here</div>;
+  return (
+    <RecipeProvider>
+      <div className="app">
+        <RecipeList />
+        <RecipeDetails />
+      </div>
+    </RecipeProvider>
+  );
 }
 
 export default App;
