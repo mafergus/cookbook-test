@@ -1,0 +1,33 @@
+
+{
+    "recepies":  [
+        {
+          "id": "0",
+          "author": "Jim",
+          "name": "Tofu",
+          "description": "Tofu can get a bad rap as a meat substitute, but it’s actually an incredibly versatile ingredient. When blended, it has a great creamy texture – you can use it in a vegan mousse or pudding, and it’s essential for making a creamy ricotta substitute in my lasagna and vegan stuffed shells. Most often, I bake it to add protein and hearty texture to bowls, noodles, and salads.",
+          "image":"/tofu.jpg" 
+        }, 
+        {
+          "id": "1",
+          "author": "Aravind",
+          "name": "Hamburger",
+          "description": "Cooked on a grill heated to high heat, these hamburger patties should be fully cooked after about 4 to 5 minutes per side. You’ll know they’re done when the juices run clear, they’re no longer pink in the center, and an instant-read thermometer reads at least 165 degrees F.",
+          "image": "/burger.jfif"
+         },
+         {
+            "id": "2",
+            "author": "Mack",
+            "name": "Chicken Casserole",
+            "description": "Simply toss cooked fettucine with shredded rotisserie chicken, mozzarella and your favorite jarred marinara sauce, then top it with buttery Parmesan and garlic breadcrumbs. Pop it in the oven until it’s hot and beautifully browned and crisped on top.",
+            "image": "/chicken casserole.jpg"
+           },
+           {
+            "id": "3",
+            "author": "Hediye",
+            "name": "Khinkali",
+            "description": "Boil a large pot of water and add a few Khinkali at a time. The dumplings will eventually float to the top, then allow them to simmer for 2-4 minutes until cooked",
+            "image": "/khinkali.jpg"
+           }
+      ]
+ } 
